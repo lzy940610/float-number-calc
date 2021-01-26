@@ -16,10 +16,7 @@ return /******/ (() => { // webpackBootstrap
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "add": () => /* binding */ add,
-/* harmony export */   "sub": () => /* binding */ sub,
-/* harmony export */   "mul": () => /* binding */ mul,
-/* harmony export */   "div": () => /* binding */ div
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 var add = function add() {
   var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -102,7 +99,12 @@ var div = function div() {
   return mul(c / d, Math.pow(10, f - e));
 };
 
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  add: add,
+  sub: sub,
+  mul: mul,
+  div: div
+});
 
 /***/ })
 /******/ 	]);
