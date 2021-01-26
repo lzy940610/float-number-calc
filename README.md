@@ -38,8 +38,8 @@ calc.div('9.99', '1.11')  // '9'
 - ✅ .md
 - ✅ unit test
 - ✅ test coverage
+- ✅ ESLint
 - ⌛️ CHANGELOG
-- ⌛️ ESLint
 - ⌛️ Git Commit Standard
 
 ## Issues

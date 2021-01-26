@@ -1,5 +1,7 @@
 if (process.env.NODE_ENV === 'production') {
-    module.exports = require('./dist/float-number-calc.min.js')
+  // eslint-disable-next-line global-require
+  module.exports = require('./dist/float-number-calc.min.js')
 } else {
-    module.exports = require('./dist/float-number-calc.js')
+  // eslint-disable-next-line global-require
+  module.exports = require('./dist/float-number-calc.js')
 }

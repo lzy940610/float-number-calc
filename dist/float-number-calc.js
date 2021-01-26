@@ -18,6 +18,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
+var mul = function mul() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var c = 0;
+  var d = a.toString();
+  var e = b.toString();
+
+  try {
+    c += d.split('.')[1].length;
+  } catch (f) {}
+
+  try {
+    c += e.split('.')[1].length;
+  } catch (f) {}
+
+  return Number(d.replace('.', '')) * (Number(e.replace('.', '')) / Math.pow(10, c));
+};
+
 var add = function add() {
   var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
@@ -60,24 +78,6 @@ var sub = function sub() {
 
   var e = Math.pow(10, Math.max(c, d));
   return (mul(a, e) - mul(b, e)) / e;
-};
-
-var mul = function mul() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  var c = 0;
-  var d = a.toString();
-  var e = b.toString();
-
-  try {
-    c += d.split('.')[1].length;
-  } catch (f) {}
-
-  try {
-    c += e.split('.')[1].length;
-  } catch (f) {}
-
-  return Number(d.replace('.', '')) * Number(e.replace('.', '')) / Math.pow(10, c);
 };
 
 var div = function div() {

@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
+    "lint": "eslint ./src --fix",
     "test": "mocha --require @babel/register test/*.js",
     "coverage": "nyc mocha --require @babel/register test/*.js",
     "dev": "webpack serve",
-    "build": "webpack",
-    "prepublish": "webpack"
+    "build": "eslint ./src --fix && webpack",
+    "prepublish": "eslint ./src --fix && webpack"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,12 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/register": "^7.12.10",
     "assert": "^2.0.0",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-webpack-plugin": "^2.4.3",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "terser-webpack-plugin": "^5.1.1",
