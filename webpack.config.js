@@ -12,6 +12,15 @@ module.exports = {
         libraryExport: 'default'
     },
     mode: 'none',
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            }
+        ]
+    },
     optimization: {
         minimize: true,
         minimizer: [

@@ -59,7 +59,7 @@ const div = (a = 0, b = 0) => {
 	return mul(c / d, Math.pow(10, f - e))
 }
 
-export default {
+export {
     add,
     sub,
     mul,
