@@ -32,6 +32,15 @@ calc.div('9.99', '1.11')  // '9'
 | mul    | mul(x, y) | 简单乘法 |
 | div    | div(x, y) | 简单除法 |
 
+### To do
+>  ✅ ❌ ⌛️
+
+- ✅ .md
+- ✅ unit test
+- ✅ test coverage
+- ⌛️ CHANGELOG
+- ⌛️ ESLint
+- ⌛️ Git Commit Standard
 
 ## Issues
 
