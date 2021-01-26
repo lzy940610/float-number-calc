@@ -1,4 +1,4 @@
-export const add = (a = 0, b = 0) => {
+const add = (a = 0, b = 0) => {
 	let c
 	let d
 	try {
@@ -15,7 +15,7 @@ export const add = (a = 0, b = 0) => {
 	return (mul(a, e) + mul(b, e)) / e
 }
 
-export const sub = (a = 0, b = 0) => {
+const sub = (a = 0, b = 0) => {
 	let c
 	let d
 	try {
@@ -32,7 +32,7 @@ export const sub = (a = 0, b = 0) => {
 	return (mul(a, e) - mul(b, e)) / e
 }
 
-export const mul = (a = 0, b = 0) => {
+const mul = (a = 0, b = 0) => {
 	let c = 0
 	const d = a.toString()
 	const e = b.toString()
@@ -45,7 +45,7 @@ export const mul = (a = 0, b = 0) => {
 	return Number(d.replace('.', '')) * Number(e.replace('.', '')) / Math.pow(10, c)
 }
 
-export const div = (a = 0, b = 0) => {
+const div = (a = 0, b = 0) => {
 	let e = 0
 	let f = 0
 	try {
@@ -57,4 +57,11 @@ export const div = (a = 0, b = 0) => {
 	const c = Number(a.toString().replace('.', ''))
 	const d = Number(b.toString().replace('.', ''))
 	return mul(c / d, Math.pow(10, f - e))
+}
+
+export default {
+    add,
+    sub,
+    mul,
+    div
 }
